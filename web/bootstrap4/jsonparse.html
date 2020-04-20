@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/md5.js"></script>
+    <script src="../js/sha1.js"></script>
+    <script>
+        var json = "{\n" +
+            "    \"id\": 0,\n" +
+            "    \"faceId\": 0,\n" +
+            "    \"gender\": \"\",\n" +
+            "    \"name\": \"用户名\",\n" +
+            "    \"content\": \"\",\n" +
+            "    \"voicetype\": 0,\n" +
+            "    \"email\": \"\",\n" +
+            "    \"phone\": \"\",\n" +
+            "    \"dirType\": 0,\n" +
+            "    \"groupId\": 0,\n" +
+            "    \"isVip\": 0,\n" +
+            "    \"path\": \"\",\n" +
+            "    \"features\": \"\"\n" +
+            "}"
+        var parse = JSON.parse(json);
+        console.log("parse: "+parse.name)
+        var s = JSON.stringify(parse);
+        console.log("s:"+s);
+        var json2 = {
+            "username":"zhangs",
+            "password":"1235487",
+        }
+        console.log("fdf","hh",json2)
+        // var parse1 = JSON.stringify(json2);
+        // console.log("解析json:"+parse1+", "+json2.username)
+        //
+        // var strs = hex_md5("12345678");
+        // var str2 = hex_sha1("12345678");
+        // console.log("info: md5: "+strs+", sha1: "+str2);
+        //
+        // /**
+        //  * btoa()对字符串进行base64编码
+        //  * atob()对字符串base64解码
+        //  * 这两个方法不适合非 ASCII 码的字符
+        //  * @type {string}
+        //  */
+        // var string = 'Hello World!';
+        // var btoa1 = btoa(string); // "SGVsbG8gV29ybGQh"
+        // var atob1 = atob(btoa1); // "Hello World!"
+        // console.log("btoa:"+btoa1+", atob1:"+atob1)
+        // function b64Encode(str) {
+        //     return btoa(encodeURIComponent(str));
+        // }
+        //
+        // function b64Decode(str) {
+        //     return decodeURIComponent(atob(str));
+        // }
+        //
+        // var encode = b64Encode(string); // "JUU0JUJEJUEwJUU1JUE1JUJE"
+        // var decode = b64Decode(encode); // "你好"
+        // console.log("encode:"+encode+", decode:"+decode);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
